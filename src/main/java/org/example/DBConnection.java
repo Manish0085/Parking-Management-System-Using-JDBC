@@ -206,7 +206,7 @@ public class DBConnection {
                         preparedStatement.setString(6, licensePlateNo);
                         preparedStatement.executeUpdate();
 
-                        System.out.println("vehicle with license no. " + licensePlateNo + " has been parked at spot No " + (obj.number.indexOf(licensePlateNo) + 101));
+                        System.out.println("vehicle with license no. " + licensePlateNo + " has been parked at spot No " + spotNo1(licensePlateNo));git
                         Operations.operation();
                         System.out.println();
                         System.out.println("****************************************************************************************************");
@@ -259,6 +259,7 @@ public class DBConnection {
                         Operations.operation();
                     }
                     preparedStatement.executeUpdate();
+                    System.out.println("vehicle with license no. " + licensePlateNo + " has been parked at spot No " + spotNo1(licensePlateNo));
 
                     System.out.println("****************************************************************************************************");
                     System.out.println("                 Owner Name :- " + ownerName);
@@ -321,7 +322,7 @@ public class DBConnection {
                         preparedStatement.setString(6, licensePlateNo);
                         preparedStatement.executeUpdate();
 
-                        System.out.println("vehicle with license no. " + licensePlateNo + " has been parked at spot No " + (objfour.num.indexOf(licensePlateNo) + 101));
+                        System.out.println("vehicle with license no. " + licensePlateNo + " has been parked at spot No " + spotNo2(licensePlateNo));
                         System.out.println();
                         System.out.println("****************************************************************************************************");
                         System.out.println("                 Owner Name :- " + resultSet.getString("ownerName"));
@@ -374,6 +375,7 @@ public class DBConnection {
                         Operations.operation();
                     }
                     preparedStatement.executeUpdate();
+                    System.out.println("vehicle with license no. " + licensePlateNo + " has been parked at spot No " + spotNo2(licensePlateNo));
 
                     System.out.println("****************************************************************************************************");
                     System.out.println("                 Owner Name :- " + ownerName);
